@@ -1,0 +1,124 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjdmxvux5qppi"]
+
+[ext_resource type="Texture2D" uid="uid://it8i1addvvjn" path="res://game/icon.svg" id="1_w7stm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6a1n2"]
+size = Vector2(1152.06, 62)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(577.5, 33)
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(576, 33)
+shape = SubResource("RectangleShape2D_6a1n2")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/StaticBody2D"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(578, 625)
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D"]
+position = Vector2(579, 623)
+shape = SubResource("RectangleShape2D_6a1n2")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D/StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/StaticBody2D/StaticBody2D"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(32.0001, 392)
+rotation = 1.57815
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D/StaticBody2D"]
+position = Vector2(33, 343)
+rotation = -1.56774
+shape = SubResource("RectangleShape2D_6a1n2")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D/StaticBody2D/StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(1127, 379)
+rotation = 1.57815
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
+position = Vector2(1127, 356)
+rotation = -1.56774
+shape = SubResource("RectangleShape2D_6a1n2")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(204, -193)
+rotation = 1.57815
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(203, -195)
+rotation = -1.56774
+shape = SubResource("RectangleShape2D_6a1n2")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="StaticBody2D2"]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2/StaticBody2D2"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(598, -237)
+rotation = 1.57815
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/StaticBody2D2"]
+position = Vector2(594, -239)
+rotation = -1.56774
+shape = SubResource("RectangleShape2D_6a1n2")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(375, 909)
+rotation = 1.57815
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(375, 910)
+rotation = -1.56774
+shape = SubResource("RectangleShape2D_6a1n2")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="StaticBody2D3"]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3/StaticBody2D3"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0.995099, 0.741462, 0.592869, 1)
+position = Vector2(789, 909)
+rotation = 1.57815
+scale = Vector2(8.96094, 0.484375)
+texture = ExtResource("1_w7stm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3/StaticBody2D3"]
+position = Vector2(790, 907)
+rotation = -1.56774
+shape = SubResource("RectangleShape2D_6a1n2")

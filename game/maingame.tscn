@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://c34dy0usnfni5"]
+
+[ext_resource type="Script" uid="uid://ba1s58weyssn3" path="res://game/character_body_2d.gd" id="2_t2r4p"]
+[ext_resource type="Texture2D" uid="uid://it8i1addvvjn" path="res://game/icon.svg" id="3_csw1l"]
+[ext_resource type="PackedScene" uid="uid://cjdmxvux5qppi" path="res://game/world.tscn" id="3_t2r4p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_csw1l"]
+size = Vector2(74, 68)
+
+[node name="Maingame" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_t2r4p")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(1013, 341)
+scale = Vector2(0.570313, 0.53125)
+texture = ExtResource("3_csw1l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(1014, 340)
+shape = SubResource("RectangleShape2D_csw1l")
+
+[node name="Node2D" parent="." instance=ExtResource("3_t2r4p")]
